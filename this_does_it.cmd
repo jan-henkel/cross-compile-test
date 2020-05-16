@@ -1,0 +1,2 @@
+cd build
+D:/Programme/msys64/mingw64/bin/clang++.exe --target=aarch64-none-linux-gnu --gcc-toolchain=W:\more_projects\C++\gcc-arm-9.2-2019.12-mingw-w64-i686-aarch64-none-linux-gnu --sysroot=W:\more_projects\C++\gcc-arm-9.2-2019.12-mingw-w64-i686-aarch64-none-linux-gnu\aarch64-none-linux-gnu\libc -I..\include_test_folder ..\main.cpp ..\src_test_folder\src_test.cpp -fuse-ld=lld

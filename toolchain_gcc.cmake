@@ -1,0 +1,22 @@
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(tools W:/more_projects/C++/gcc-arm-9.2-2019.12-mingw-w64-i686-aarch64-none-linux-gnu)
+#set(CMAKE_SYSROOT ${tools}/aarch64-none-linux-gnu)
+#set(CMAKE_STAGING_PREFIX out)
+#include_directories(W:/more_projects/C++/gcc-arm-9.2-2019.12-mingw-w64-i686-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include)
+
+#set(CMAKE_C_COMPILER clang)
+#set(CMAKE_CXX_COMPILER clang++)
+#set(CMAKE_C_FLAGS -fuse-ld=lld)
+#set(CMAKE_C_LINK_EXECUTABLE lld-link)
+#set(CMAKE_CXX_LINK_EXECUTABLE lld-link)
+#set(CMAKE_C_COMPILER_TARGET aarch64-none-linux-gnu)
+#set(CMAKE_CXX_COMPILER_TARGET aarch64-none-linux-gnu)
+set(CMAKE_C_COMPILER ${tools}/bin/aarch64-none-linux-gnu-gcc.exe)
+set(CMAKE_CXX_COMPILER ${tools}/bin/aarch64-none-linux-gnu-g++.exe)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
