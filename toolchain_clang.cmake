@@ -6,8 +6,11 @@ set(CMAKE_SYSROOT ${tools}/aarch64-none-linux-gnu/libc)
 set(CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN ${tools})
 set(CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN ${tools})
 
-set(CMAKE_C_COMPILER clang)
-set(CMAKE_CXX_COMPILER clang++)
+
+set(CMAKE_C_COMPILER D:/Programme/LLVM/bin/clang.exe)
+set(CMAKE_CXX_COMPILER D:/Programme/LLVM/bin/clang++.exe)
+set(CMAKE_C_FLAGS "--sysroot=${CMAKE_SYSROOT} --gcc-toolchain=${tools} --target=aarch64-none-linux-gnu")
+set(CMAKE_CXX_FLAGS "--sysroot=${CMAKE_SYSROOT} --gcc-toolchain=${tools} --target=aarch64-none-linux-gnu")
 set(CMAKE_EXE_LINKER_FLAGS -fuse-ld=lld)
 
 set(CMAKE_C_COMPILER_TARGET aarch64-none-linux-gnu)
